@@ -1,0 +1,174 @@
+:root {
+    --white: #ffffff;
+    --dark: #000000;
+    --primary: #b30000;
+    --secundary: #799deb;
+    --secundaryLight: #dfd4c0;
+    --radio-borde: 0.5rem;
+
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/* tamaños para los textos */
+h1 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--dark);
+    font-weight: bolder;
+}
+
+h1 span {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* barra de navegación  */
+.navegacion {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+    @media query para modificar reglas:
+    Se aplican las reglas quel hay dentro de la media query
+    si la ventana del navegador mide un mínimo de 480px
+    */
+@media (min-width: 480px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* enlaces de la barra de navegación */
+.navegacion a {
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.navegacion a:hover {
+    background-color: var(--secundary);
+    color: var(--dark);
+}
+
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Transformación del texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    background: linear-gradient(to right, #e02424, #ec8181); /* Degradado de fondo */
+    -webkit-background-clip: text; /* Recorte del fondo para texto en navegadores WebKit */
+    color: transparent; /* Texto transparente para mostrar el degradado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #feb47b; /* Borde del título */
+    
+    
+}
+
+
+
+
+
+.product img {
+    max-width: 20%;
+    height: auto;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b4b4b4;
+}
+
+/* Estilo general para el footer */
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto en blanco */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 1em; /* Espaciado interno */
+    border-top: 2px solid #444; /* Borde superior sutil */
+    margin-top: 2em; /* Espaciado superior para separar del contenido */
+}
+
+/* Estilo para el párrafo dentro del footer */
+footer p {
+    margin: 0.5em 0; /* Espaciado vertical entre párrafos */
+    font-size: 1em; /* Tamaño de la fuente */
+}
+
+/* Estilo para el símbolo de registrado */
+footer p span {
+    font-size: 1.2em; /* Tamaño del símbolo */
+    vertical-align: middle; /* Alineación vertical con el texto */
+}
+
+/* Estilo para los enlaces */
+footer a.enlace {
+    color: #4db8ff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+footer a.enlace:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    color: #3399ff; /* Color del enlace en hover */
+}
